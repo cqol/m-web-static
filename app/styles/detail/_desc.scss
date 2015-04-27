@@ -1,0 +1,21 @@
+.img-info > img {
+  width: 100%;
+}
+
+.btn-fix{
+  display: none;
+  border-top: 1px solid $border;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.ops-con {
+
+}
+.ops-info {
+  margin: rem(32px);
+}

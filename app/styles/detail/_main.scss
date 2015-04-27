@@ -1,0 +1,231 @@
+.wrap {
+  background: #fff;
+}
+.con, .swipe-wrap{
+  overflow: hidden;
+}
+.nav {
+  overflow: hidden;
+  text-align: center;
+  font-size: rem(30px);
+  @include hl(80px);
+  &.scroll-fixed{position:fixed; top:0; left:0; width:100%;z-index:500; background-color:#fff;}
+
+  a {
+    flex: 1;
+    display: block;
+    flex-basis: 1px;
+    display: -webkit-box;
+    box-align:center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-box-orient: vertical;
+    height: rem(80px);
+
+    color: $default;
+    float: left;
+    width: 33.33%;
+    border-top: rem(8px) solid transparent;
+    position: relative;
+    &.current {
+      border-top-color: $current;
+      color: $current;
+    }
+    &.desc {
+      &:after {
+        content: '\20';
+        position: absolute;
+        right: -1px;
+        top: .2em;
+        bottom: .2em;
+        border-right: 1px solid $border;
+      }
+      &:before {
+        content: '\20';
+        position: absolute;
+        left:-1px;
+        top: .2em;
+        bottom: .2em;
+        border-right: 1px solid $border;
+      }
+    }
+  }
+}
+.dress-box {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  &:first-child {
+    display: block;
+  }
+}
+.summary-con {
+  figure {
+    margin: 0;
+  }
+  .pro {
+    .alink {
+      display: block;
+      margin: rem(40px) rem(80px) 1em;
+      &.load {
+        text-align: center;
+        img {
+          @include wh(50px);
+          margin: rem(200px) auto rem(200px);
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .price-sum {
+      overflow: hidden;
+      margin: 0 rem(32px);
+      color: $current;
+      .price {
+        font-size: rem(36px);
+        float: left;
+        margin: 0;
+        i {
+          font-size: rem(30px);
+          font-style: normal;
+          font-family: Verdana,arial;
+        }
+
+        .source-price {
+          margin-left: rem(10px);
+
+          font-size: rem(24px);
+          color: $delColor;
+          i {
+            font-size: rem(20px);
+          }
+        }
+      }
+
+      .sum {
+        margin-top: rem(10px);
+        float: right;
+        font-size: rem(24px);
+        color: $delColor;
+      }
+
+    }
+    .discrp{
+      margin: 0 rem(32px);
+    }
+
+  }
+
+}
+.img-info {
+  &.load {
+    text-align: center;
+    img {
+      @include wh(50px);
+      margin: rem(300px) auto rem(300px);
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.btn {
+  margin: rem(16px) rem(32px);
+  background-color:$current;
+  height:rem(85px);
+  border-radius:rem(12px);
+  overflow:hidden;
+  font-size: rem(36px);
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  line-height: rem(87px);
+  color:#fff !important;
+
+}
+.like-hd {
+  position: relative;
+  color: #555;
+  padding-left: rem(43px);
+  background: $bg;
+  line-height: rem(72px);
+  height: rem(72px);
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  font-size: rem(28px);
+  &:after {
+    content: '\20';
+    position: absolute;
+    left: rem(20px);
+    top: .9em;
+    bottom: .9em;
+    border-right: rem(8px) solid $current;
+  }
+
+}
+.like-con {
+  overflow: hidden;
+  margin: 0 rem(12px);
+}
+.item {
+  width: 33.33%;
+  float: left;
+  margin-top: rem(20px);
+  overflow: hidden;
+  figure {
+    .alink {
+      width: 100%;
+      display: block;
+      vertical-align: middle;
+      text-align: center;
+      &.load {
+        text-align: center;
+        img {
+          @include wh(50px);
+          margin: rem(80px) auto rem(80px);
+        }
+      }
+      img {
+        width: 90%;
+        vertical-align: middle;
+      }
+    }
+    .price-sum {
+      overflow: hidden;
+      margin: 0 rem(12px);
+      color: $current;
+      line-height: rem(40px);
+      .price {
+        font-size: rem(30px);
+        margin: 0;
+        float: left;
+        i {
+          font-size: rem(24px);
+          font-style: normal;
+          font-family: Verdana,arial;
+        }
+
+      }
+
+      .source-price {
+        float: right;
+        font-size: rem(20px);
+        color: $delColor;
+        i {
+          font-style: normal;
+          font-family: Verdana,arial;
+          font-size: rem(16px);
+        }
+      }
+    }
+    .discrp {
+      margin: rem(10px) rem(12px) 0;
+      @include hl(40px);
+      overflow: hidden;
+    }
+  }
+}
+
+@import "./desc";

@@ -1,0 +1,162 @@
+.column-wrap {
+  padding: rem(20px) 2%;
+  .ul {
+    float: left;
+    width: 49%;
+    margin-left: 2%;
+    &:first-child {
+      margin-left: 0;
+    }
+    .column-box {
+      list-style: none;
+      width: 100%;
+      figure {
+        margin: 0;
+      }
+      border: 1px solid $border;
+      background-color: #fff;
+      min-height: 100px;
+      margin-bottom: 4%;
+      background-clip: padding-box;
+      &.load {
+        text-align: center;
+        .img {
+          @include wh(60px);
+          margin: rem(120px) auto rem(120px);
+        }
+      }
+      .img {
+        width: 100%;
+      }
+      a {
+        color: $default;
+      }
+    }
+    .avatar {
+      vertical-align: top;
+      text-align: left;
+      padding: rem(20px) rem(16px) 0;
+      span {
+        display: inline-block;
+        vertical-align: top;
+        &.pic {
+          @include wh(60px);
+          border-radius: rem(30px);
+          background-clip: padding-box;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: auto;
+            margin-top: 0;
+          }
+        }
+        &.name {
+          width: auto;
+          min-width: rem(60px);
+          @include hl(60px);
+          font-weight: bold;
+        }
+      }
+    }
+    .tit {
+      padding: rem(10px) rem(16px) 0;
+      line-height: 1.5;
+      max-height: rem(116px);
+      text-align: left;
+      overflow: hidden;
+    }
+    .goto-dress {
+      border-top: 1px solid $bg;
+      margin: rem(20px) 4% 0;
+      @include hl(60px);
+      color: $color;
+      display: block;
+      text-align: left;
+      min-height: rem(60px);
+      i {
+        display: inline-block;
+        @include wh(24px);
+        margin-right: rem(4px);
+      }
+    }
+    p.desc {
+      padding: rem(10px) 0;
+      margin: 0 rem(20px);
+      line-height: 1.5;
+      border-bottom: 1px solid #e9e9e9;
+    }
+    .sales {
+      @include hl(60px);
+      padding: 0 rem(20px);
+      color: $color;
+      font-size: 1.1rem;
+      span.s {
+        float: right;
+        color: $tag;
+        font-size: 1rem;
+      }
+      span.lt {
+        text-decoration: line-through;
+      }
+      // i{ font-family:$number; font-size:1.3rem;}
+    }
+    .org {
+      border-top: 1px solid $border;
+      font-size: 0;
+      margin: 0 rem(10px);
+      color: $tag;
+      padding-bottom: rem(10px);
+      span {
+        width: 50%;
+        display: inline-block;
+        font-size: 1rem;
+        text-align: left;
+        @include hl(50px);
+        white-space: nowrap;
+        &:last-child {
+          text-align: right;
+        }
+        i {
+          color: $color;
+          margin-left: 2px;
+        }
+      }
+    }
+    .price-group {
+      overflow: hidden;
+      padding: rem(8px) rem(16px) 0;
+      line-height: rem(60px);
+      text-align: left;
+      &.clearfix {
+        border-top: none;
+      }
+      .icon {
+        float: right;
+        color: $delColor;
+      }
+      .price {
+        color: $color;
+        font-size: rem(30px);
+        margin: 0;
+        i {
+          font-size: rem(24px);
+          font-style: normal;
+          font-family: Verdana,arial;
+        }
+
+      }
+
+      .source-price {
+        margin-left: rem(10px);
+        font-size: rem(20px);
+        color: $delColor;
+        i {
+          font-style: normal;
+          font-family: Verdana,arial;
+          font-size: rem(16px);
+        }
+      }
+    }
+
+  }
+}

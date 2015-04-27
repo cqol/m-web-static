@@ -1,0 +1,16 @@
+<div class="t-user">
+  <ul>
+    <li class="t-zan" data-zan="{{#is hasFav 1}}1{{else}}2{{/is}}">
+      {{#is hasFav 1}}
+        <img src="/images/home/zan-not.png" alt="">
+      {{else}}
+        <img src="/images/home/zan.png" alt="">
+      {{/is}}
+      <span>{{favCount}}</span>
+    </li>
+    <li class="t-comment">
+      <img src="/images/home/comment.png" alt="">
+      <span>{{commentCount}}</span>
+    </li>
+  </ul>
+</div>

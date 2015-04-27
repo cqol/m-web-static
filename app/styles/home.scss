@@ -1,0 +1,158 @@
+@import "./shared/foundation/functions";
+@import "./shared/common";
+
+.t-header {
+  font-size: rem-calc(36);
+  height: rem-calc(90);
+  line-height: rem-calc(90);
+  text-align: center;
+  background: #fff000;
+}
+
+.t-banner {
+  img {
+    width: 100%;
+  }
+}
+
+.t-article {
+  margin: rem-calc(30 25 50);
+}
+
+p {
+  margin: 0;
+}
+
+// 富文本插入片段样式
+.t-template {
+  background: #fff;
+  padding: 10px 12px; // rem-calc(20 25);
+  border: 1px solid #d7d7d7;
+  overflow: hidden;
+  .t-img {
+    float: left;
+    width: 25.71429%; // percentage(180/700);
+    img {
+      width: 100%;
+    }
+  }
+  .t-detail {
+    float: right;
+    width: 67.85714%; // percentage(475/700);
+    height: 0;
+    padding-bottom: 25.71429%; // percentage(180/700);
+    position: relative;
+    p {
+      line-height: 16px; // rem-calc(32);
+      font-size: 14px; // rem-calc(28);
+      a {
+        color: #000;
+      }
+    }
+    .t-title {
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+    .t-more {
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      .t-price {
+        color: #ff334d;
+        float: left;
+        em {
+          font-family: Verdana, arial;
+          font-style: normal;
+        }
+      }
+      .t-source {
+        color: #999;
+        float: right;
+      }
+    }
+  }
+}
+
+.t-shichi-hd {
+  font-size: rem-calc(28);
+  height: rem-calc(70);
+  line-height: rem-calc(70);
+  color: #555;
+  margin: rem-calc(0 25);
+  em {
+    display: inline-block;
+    vertical-align: middle;
+    height: rem-calc(26);
+    width: rem-calc(8);
+    margin: rem-calc(0 15 0 0);
+    background: #ff334d;
+  }
+}
+
+.t-shichi-bd {
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  ul {
+    margin: rem-calc(20 25 33);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style: none;
+    li {
+      width: percentage(220/700);
+      img {
+        width: 100%;
+        height: auto;
+      }
+      a {
+        color: #000;
+      }
+      p {
+        line-height: rem-calc(32);
+        margin: rem-calc(15 0 0);
+      }
+    }
+  }
+}
+
+.t-user {
+  margin-top: rem-calc(19);
+  border-top: 1px solid #d7d7d7;
+  height: rem-calc(89);
+  background: #fff;
+  ul {
+    margin: 0;
+    padding: 0;
+    height: rem-calc(89);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    list-style: none;
+    li {
+      flex: 1;
+      height: rem-calc(60);
+      line-height: rem-calc(60);
+      text-align: center;
+      &:first-child {
+        border-right: 1px solid #d7d7d7;
+      }
+      img {
+        width: rem-calc(34);
+        margin: rem-calc(-6 10 0 0);
+      }
+      span {
+        font-size: rem-calc(30);
+        color: #999;
+        display: inline-block;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,84 @@
+{
+  "name": "m-web-static",
+  "version": "0.0.1",
+  "description": "m-web-static",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cqol/m-web-static"
+  },
+  "browser": {
+    "jquery": "jquery/dist/jquery.js",
+    "backbone": "backbone/backbone.js",
+    "lodash": "lodash/index.js",
+    "fastclick": "fastclick/lib/fastclick.js"
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "browserify-shim",
+      "hbsfy"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "global:$",
+    "lodash": "global:_",
+    "backbone": "global:Backbone",
+    "fastclick": "global:FastClick"
+  },
+  "devDependencies": {
+    "async": "^0.9.0",
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "browserify-shim": "^3.8.3",
+    "connect": "^3.0.1",
+    "connect-livereload": "^0.5.0",
+    "connect-multiparty": "^1.2.5",
+    "del": "^0.1.0",
+    "express": "^3.4.3",
+    "express-handlebars": "^1.2.2",
+    "globby": "^1.1.0",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-bump": "^0.3.0",
+    "gulp-changed": "^0.4.1",
+    "gulp-filesize": "^0.0.6",
+    "gulp-filter": "^2.0.0",
+    "gulp-git": "^1.2.0",
+    "gulp-if": "^1.2.1",
+    "gulp-imagemin": "^0.6.2",
+    "gulp-livereload": "^2.0.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-notify": "^1.4.2",
+    "gulp-replace": "^0.5.2",
+    "gulp-sass": "^1.3.1",
+    "gulp-sourcemaps": "^1.2.8",
+    "gulp-ssh": "^0.3.3",
+    "gulp-uglify": "^1.0.2",
+    "gulp-useref": "^1.0.2",
+    "gulp-util": "^3.0.0",
+    "gulp-zip": "^2.0.2",
+    "gulp.spritesmith": "^3.2.0",
+    "handlebar-middleware": "^0.0.8",
+    "handlebars": "^1.3.0",
+    "hbsfy": "^2.0.0",
+    "moment": "^2.9.0",
+    "opn": "^1.0.0",
+    "pretty-hrtime": "^1.0.0",
+    "require-dir": "^0.1.0",
+    "run-sequence": "^1.0.2",
+    "serve-index": "^1.1.4",
+    "serve-static": "^1.4.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^2.2.1"
+  },
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "backbone.marionette": "^2.4.1",
+    "fastclick": "^1.0.6",
+    "handlebars-helpers": "^0.5.8",
+    "jquery": "^2.1.3",
+    "lodash": "^3.7.0",
+    "react": "^0.13.2"
+  }
+}

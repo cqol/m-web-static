@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+//color
+$border:#d7d7d7;
+$bg:#f5f5f5;
+$tag:#f5f5f5;
+$defaultBg:#e8e8e8;
+
+$default:#000;
+$current:#ff334d;
+$color:#ff334d;
+
+$delColor:#999;
+
+$font: Tahoma,Arial,Roboto,'Droid Sans','Helvetica Neue','sumiro','Droid Sans Fallback','Heiti SC','Hiragino Sans GB', 'Microsoft Yahei',Simsun,sans-self;
+
+
+$base_fontsize_750:24px;
+
+/*
+// 480-750
+$mul_480: 480/750;
+$base_fontsize_480:$base_fontsize_750*$mul_480;
+
+// <480
+$mul_320: 320/750;
+$base_fontsize_320:$base_fontsize_750*$mul_320;
+
+
+
+@media all and (min-width:750px) {
+  html { font-size: $base_fontsize_750; }
+}
+@media all and (max-width:749px) and (min-width:480px) {
+  html { font-size: $base_fontsize_480; }
+}
+@media all and (max-width:479px) {
+  html { font-size: $base_fontsize_320; }
+}
+*/
+
+
+@function rem($n){
+  @return ($n/$base_fontsize_750)+rem;
+}
+
+@mixin wh($w,$h:$w){
+  width:rem($w); height:rem($h);
+}
+@mixin hl($value){
+  height:rem($value); line-height:rem($value);
+}
+@mixin whl($w,$h,$l:$h){
+  width:rem($w); height:rem($h); line-height:rem($l);
+}
+@mixin bg($url,$w:100%,$h:$w){
+  background:inline-image($url) no-repeat; background-size:$w $h;
+}
+@mixin btn($h,$radius:$h/4){
+  color:#fff;
+  background-color:$color;
+  height:rem($h);
+  border-radius:rem($radius);
+  overflow:hidden;
+  background-clip: padding-box;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  line-height: rem($h);
+}
+
+
+@mixin trans($speed:0.3s,$way:linear,$prototype:all){
+  -webkit-transition: $speed $way $prototype;
+  -moz-transition: $speed $way $prototype;
+  transition: $speed $way $prototype;
+}
+
+@mixin transform($x,$y){
+  -moz-transform: translate($x,$y);
+  -webkit-transform: translate($x,$y);
+  transform: translate($x,$y);
+}
+
+@mixin scale($x,$y:$x){
+  -moz-transform: scale($x,$y);
+  -webkit-transform: scale($x,$y);
+  transform: scale($x,$y);
+}
+
+@mixin rotate($x){
+  -moz-transform: rotate($x);
+  -webkit-transform: rotate($x);
+  transform: rotate($x);
+}
+
+@mixin animate($name,$speed,$way:linear,$count:infinite){
+  -webkit-animation: $name $speed $count $way;
+  -moz-animation: $name $speed $count $way;
+  animation: $name $speed $count $way;
+}
+
+
+@mixin icon($bg,$w,$h:$w){
+  @include wh($w,$h);
+  display:inline-block;
+  // background:url($bg);
+  background:inline-image($bg) no-repeat;
+  background-size:100% 100%;
+}
+
+@mixin rap(){
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin radius($w,$h:$w,$radius:$h/4){
+  width: $w;
+  height:$h;
+  border-radius:$radius;
+  overflow:hidden;
+  background-clip: padding-box;
+  display: inline-block;
+  text-align: center;
+}

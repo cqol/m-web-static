@@ -1,0 +1,24 @@
+@import "./column";
+
+.banner > img {
+  width: 100%;
+}
+
+.column-wrap {
+  .ul {
+    .column-box {
+      margin-bottom: rem(58px);
+    }
+  }
+}
+.column-box {
+  .price-group {
+
+  }
+  .num {
+    color: $delColor;
+    float: left;
+    text-align: left;
+    margin-top: rem(10px);
+  }
+}
