@@ -11,9 +11,3 @@ gulp serve
 
 # build 
 gulp
-
-# 上传测试FTP
-./upload -test
-
-# 上传发布FTP
-./upload -deploy
