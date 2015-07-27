@@ -1,6 +1,8 @@
 @mixin home-sprite($key) {
   $map: (
-      foo: 0px 0px 0px 0px 34px 30px 34px 30px '/images/generated/home.png' 'foo',
+      foo: 0px 0px 0px 0px 34px 30px 34px 106px '/images/generated/home.png' 'foo',
+      zan-not: 0px 34px 0px -34px 33px 34px 34px 106px '/images/generated/home.png' 'zan-not',
+      zan: 0px 72px 0px -72px 34px 34px 34px 106px '/images/generated/home.png' 'zan',
   );
   @mixin home-sprite-width($sprite) {
     width: nth($sprite, 5);
