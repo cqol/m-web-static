@@ -9,8 +9,9 @@
   },
   "browser": {
     "jquery": "jquery/dist/jquery.js",
-    "backbone": "backbone/backbone.js",
     "lodash": "lodash/index.js",
+    "backbone": "backbone/backbone.js",
+    "react": "react/dist/react.js",
     "fastclick": "fastclick/lib/fastclick.js"
   },
   "browserify": {
@@ -24,6 +25,7 @@
     "jquery": "global:$",
     "lodash": "global:_",
     "backbone": "global:Backbone",
+    "react": "global:React",
     "fastclick": "global:FastClick"
   },
   "devDependencies": {
@@ -75,6 +77,7 @@
   "dependencies": {
     "backbone": "^1.1.2",
     "backbone.marionette": "^2.4.1",
+    "classnames": "^1.2.2",
     "fastclick": "^1.0.6",
     "handlebars-helpers": "^0.5.8",
     "jquery": "^2.1.3",
