@@ -1,144 +1,16 @@
 <!DOCTYPE html>
 <html class="no-js">
-  <head>
-    {{> metas}}
-    <title>零食家</title>
-    {{> styles}}
-    <link rel="stylesheet" href="/styles/detail.css">
-    {{> flexible}}
-  </head>
+<head>
+  {{> metas}}
+  <title>{{title}}</title>
+  {{> styles}}
+  <link rel="stylesheet" href="/styles/detail.css">
+  {{> flexible}}
+</head>
 
-  <body>
-    <div class="wrap">
-      <header id="s-header" class="nav scroll-fixed">
-        <a href="javascript:void(0);" class="summary current">基本信息</a>
-        <a href="javascript:void(0);" class="desc ">商品详情</a>
-        <a href="javascript:void(0);" class="ops ">规格参数</a>
-      </header>
-      <div class="nav">
-      </div>
-      <div class="con" style="margin:0 auto;" id="mySwipe">
-        <div class="swipe-wrap">
-          <section class="dress-box summary-con">
-            <!--商品信息-->
-            <figure class="pro">
-              <a href="#" class="alink load">
-                <img src="/images/shared/ajax_load.gif" data-origin="http://placehold.it/280x280/ff334d" alt=""/>
-              </a>
-              <div class="price-sum">
-                <p class="price">
-                  <i>¥</i>41.50
-                  <del class="source-price"><i>¥</i>45.50</del>
-                </p>
-              <span class="sum">
-                月销量：71922
-              </span>
-              </div>
-              <figcaption class="discrp">
-                三只松鼠巴旦木 坚果炒货零食特产扁桃仁 235gx2袋 百万优惠券免费领 超值优惠
-              </figcaption>
-            </figure>
-            <a href="#" class="btn">
-              去天猫抢购
-            </a>
-            <!--猜你喜欢-->
-            <h3 class="like-hd">
-              猜你喜欢
-            </h3>
-            <section class="like-con">
-              <div class="item">
-                <figure>
-                  <a href="#" class="alink load">
-                    <img src="/images/shared/ajax_load.gif" data-origin="http://placehold.it/80x80/ff334d" alt=""/>
-                  </a>
-                  <figcaption class="discrp">
-                    三只松鼠巴旦木 坚果炒货零食特产扁桃仁 235gx2袋 百万优惠券免费领 超值优惠
-                  </figcaption>
-                  <div class="price-sum">
-                  <span class="price">
-                    <i>¥</i>41.50
-                  </span>
-                    <del class="source-price"><i>¥</i>45.50</del>
-                  </div>
-                </figure>
-              </div>
-              <div class="item">
-                <figure>
-                  <a href="#" class="alink load">
-                    <img src="/images/shared/ajax_load.gif" data-origin="http://placehold.it/80x80/ff334d" alt=""/>
-                  </a>
-                  <figcaption class="discrp">
-                    三只松鼠巴旦木 坚果炒货零食特产扁桃仁 235gx2袋 百万优惠券免费领 超值优惠
-                  </figcaption>
-                  <div class="price-sum">
-                  <span class="price">
-                    <i>¥</i>41.50
-                  </span>
-                    <del class="source-price"><i>¥</i>45.50</del>
-                  </div>
-                </figure>
-              </div>
-              <div class="item">
-                <figure>
-                  <a href="#" class="alink load">
-                    <img src="/images/shared/ajax_load.gif" data-origin="http://placehold.it/80x80/ff334d" alt=""/>
-                  </a>
-                  <figcaption class="discrp">
-                    三只松鼠巴旦木 坚果炒货零食特产扁桃仁 235gx2袋 百万优惠券免费领 超值优惠
-                  </figcaption>
-                  <div class="price-sum">
-                  <span class="price">
-                    <i>¥</i>41.50
-                  </span>
-                    <del class="source-price"><i>¥</i>45.50</del>
-                  </div>
-                </figure>
-              </div>
-              <div class="item">
-                <figure>
-                  <a href="#" class="alink load">
-                    <img src="/images/shared/ajax_load.gif" data-origin="http://placehold.it/80x80/ff334d" alt=""/>
-                  </a>
-                  <figcaption class="discrp">
-                    三只松鼠巴旦木 坚果炒货零食特产扁桃仁 235gx2袋 百万优惠券免费领 超值优惠
-                  </figcaption>
-                  <div class="price-sum">
-                  <span class="price">
-                    <i>¥</i>41.50
-                  </span>
-                    <del class="source-price"><i>¥</i>45.50</del>
-                  </div>
-                </figure>
-              </div>
-            </section>
-          </section>
-          <section class="dress-box desc-con">
-            <!--商品详情-->
-            <div class="img-info load">
-              <img src="/images/shared/ajax_load.gif" data-origin="http://placehold.it/300x300/ff334d"  alt=""/>
-            </div>
+<body>
 
-          </section>
-          <section class="dress-box ops-con">
-            <!--商品详情-->
-            <div class="ops-info">
-              包装种类：袋装 <br/>
-              系列: 碧根果210gx2组合 <br/>
-              重量(g): 420 <br/>
-              食品口味: 奶油口味 <br/>
-              产地: 浙江省
-            </div>
-          </section>
-        </div>
-
-        <div class="btn-fix">
-          <a href="#" class="btn">
-            去天猫抢购
-          </a>
-        </div>
-      </div>
-    </div>
-    {{> scripts}}
-    <script src="/scripts/detail.js"></script>
-  </body>
+{{> scripts}}
+<script src="/scripts/detail.js"></script>
+</body>
 </html>
