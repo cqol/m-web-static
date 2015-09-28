@@ -6,9 +6,10 @@ var gutil = require('gulp-util');
 
 var today = gutil.date(undefined, 'yyyy-mm-dd HH:MM');
 
-gulp.task('uglifyJs', ['browserify'], function() {
-  return gulp.src(config.jsSrc)
-    .pipe(uglify({compress: {drop_console: true}}))
-    .pipe(gulp.dest(config.jsDest))
-    .pipe(size());
+gulp.task('uglifyJs', ['browserify'], function() {var today = gutil.date(undefined, 'yyyy-mm-dd HH:MM');
+
+	return gulp.src(config.jsSrc)
+		.pipe(uglify({compress: {drop_console: true}, banner: '/* @date:' + today + ' */\n'}))
+		.pipe(gulp.dest(config.jsDest))
+		.pipe(size());
 });
