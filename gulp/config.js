@@ -21,6 +21,10 @@ module.exports = {
       imagePath: '/images' // Used by the image-url helper
     }
   },
+	fonts: {
+		src: app + '/styles/font/**',
+		dest: tmp + '/font',
+	},
   images: {
     src: app + '/images/**',
     dest: tmp + '/images'
@@ -53,7 +57,7 @@ module.exports = {
     ]
   },
   production: {
-    cdn: 'http://img.taotaosou.cn/tts-m99',
+    cdn: 'http://img.hipac.cn/yt-mall',
     htmlSrc: app + '/htmls/**/*.hbs',
     imgSrc: app + '/images/**',
     cssSrc: tmp + '/styles/*.css',

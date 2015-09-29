@@ -6,7 +6,7 @@ var app = require('connect')();
 var livereload = require('connect-livereload');
 var handlebarMiddleware = require("handlebar-middleware");
 
-gulp.task('connect', ['styles', 'images'], function () {
+gulp.task('connect', ['styles', 'images', 'fonts'], function () {
 
   app.use(livereload({port: 35729}))
     .use(handlebarMiddleware({
