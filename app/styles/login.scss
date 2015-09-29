@@ -1,0 +1,187 @@
+body {
+  overflow: hidden;
+
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  min-height: 580px;
+  display: table;
+}
+.login-container{
+  height: 100%;
+  width: 100%;
+  background: url('/images/login/loginBg.jpg') no-repeat 0 0;
+  display: table;
+}
+#logobox {
+  margin: 0 auto;
+  height: 45px;
+}
+
+.loginBg {
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#logobox {
+  top: 0;
+  left: 0;
+}
+
+.login-outer {
+  margin: 0 auto;
+  padding-top: 8%;
+  width: 1000px;
+}
+
+.login-ipts {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.ipt-wrap {
+  position: relative;
+
+  margin-top: 15px;
+}
+
+.ipt-wrap .login-ipt {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 300px;
+  height: 50px;
+
+  font-size: 14px;
+  line-height: 50px;
+
+  color: #444;
+  /*background: rgba(255,255,255,0.2);*/
+  background: #fff;
+}
+
+
+.ipt-wrap .placeholder {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+
+  font-size: 14px;
+
+  color: #b2b2b2;
+
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.ipt-wrap .ipt-icon {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+
+  color: #b2b2b2;
+}
+
+.login-btn {
+  margin-top: 15px;
+  width: 100%;
+  height: 50px;
+
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+
+  color: #fcfcfc;
+  background: #1a182e;
+
+  opacity: .8;
+
+  cursor: pointer;
+
+  filter: alpha(opacity=80);
+}
+
+input:-webkit-autofill {
+  border: 1px solid #ccc!important;
+
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
+input:focus:-webkit-autofill {
+  border: 1px solid #ccc!important;
+
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
+.link-wrap {
+  bottom: 20px;
+  /*background: #fff;*/
+
+  width: 100%;
+  height: 190px;
+}
+
+.link-inner {
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 1000px;
+}
+
+.link-inner li {
+  float: left;
+
+  width: 25%;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+.link-inner li i {
+  font-size: 28px;
+  /*color:#ff5c5c;*/
+}
+
+.link-inner li .link-icon {
+  margin: 0 auto 20px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  border-radius: 45px;
+  width: 90px;
+  height: 90px;
+
+  line-height: 90px;
+  text-align: center;
+
+  background: url("/images/login/dotBg.png");
+}
+
+.link-inner .col-wrap {
+  margin: 0 auto;
+  /*border-bottom: 2px solid #fff;*/
+  padding-bottom: 10px;
+  width: 90px;
+
+  cursor: pointer;
+}
+
+.link-inner .col-wrap:hover {
+  border-bottom: 2px solid #ff5c5c;
+}
+
+.link-inner .col-wrap:hover .link-icon {
+  /*background: #ff5c5c;*/
+  /*background: url(../images/dotBg1.jpg);*/
+  color: #fff;
+}
+
+.link-inner .col-wrap:hover .link-icon i {
+  color: #fff;
+}
+
+@import "./shared/common";
+@import "./shared/_iconfont";
+@import "./shared/ui-dialog";
