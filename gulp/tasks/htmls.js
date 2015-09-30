@@ -10,7 +10,7 @@ var gulpFilter = require('gulp-filter');
 
 gulp.task('markup', function() {
 	var assets = useref.assets();
-	var htmlFilter = gulpFilter(['**/*.hbs']);
+	var htmlFilter = gulpFilter(['**/*.vm']);
 
 	var today = gutil.date('yyyymmddHHMM');
 

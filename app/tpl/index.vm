@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <title>零食家</title>
+        <link rel="stylesheet" href="/styles/list.css" />
+
+    </head>
+
+    <body>
+        #parse('/shared/header.vm')
+
+        <div class="wrap">
+            Hello, ${name}!
+
+            <section class="banner">
+                <img src="http://placehold.it/750x240/ff334d" alt=""/>
+            </section>
+
+            <section class="column-wrap clearfix">
+                <ul class="ul">
+
+                </ul>
+                <ul class="ul">
+
+                </ul>
+            </section>
+
+        </div>
+        #parse('/shared/scripts.vm')
+
+    </body>
+</html>

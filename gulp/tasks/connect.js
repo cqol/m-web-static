@@ -1,23 +1,33 @@
 var gulp = require('gulp');
 var config = require('../config').connect;
+var velocityConfig = require('../config').velocity;
 var serveStatic = require('serve-static');
 var serveIndex = require('serve-index');
 var app = require('connect')();
 var livereload = require('connect-livereload');
 var handlebarMiddleware = require("handlebar-middleware");
+var vm = require("express-velocity");
+
+var velocity = require("velocity");
+
+var vm = require('../util/vm');
 
 gulp.task('connect', ['styles', 'images', 'fonts'], function () {
 
   app.use(livereload({port: 35729}))
-    .use(handlebarMiddleware({
+    /*.use(handlebarMiddleware({
       source: config.htmlDir,
       fixtures: config.fixtures
-    }))
+    }))*/
+		/*.use(vm({
+			source: config.htmlDir,
+			fixtures: config.fixtures
+		}))*/
     .use(serveStatic(config.staticDir))
-    .use(serveStatic(config.htmlDir))
+    .use(serveStatic(velocityConfig.htmlDir))
     .use('/node_modules', serveStatic('node_modules')) 
     .use('/bower_components', serveStatic('bower_components')) 
-    .use(serveIndex(config.htmlDir));
+    .use(serveIndex(velocityConfig.htmlDir));
 
   require('http').createServer(app)
     .listen(9000)

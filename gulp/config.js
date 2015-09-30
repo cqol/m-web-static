@@ -13,6 +13,17 @@ module.exports = {
     staticDir: tmp,
     fixtures: './fixtures'
   },
+	velocity: {
+		scr: app + '/tpl',
+		htmlDir: tmp + '/htmls',
+		root: './app/tpl',
+		encoding: 'utf-8',
+		//global macro defined file
+		macro: 'src/vm/tpl/global-macro/macro.vm',
+		globalMacroPath: 'src/vm/tpl/global-macro',
+		// test data root path
+		dataPath: './fixtures'
+	},
   styles: {
     src: app + '/styles/*.scss',
     watchSrc: app + '/styles/**',
@@ -58,7 +69,7 @@ module.exports = {
   },
   production: {
     cdn: 'http://img.hipac.cn/yt-mall',
-    htmlSrc: app + '/htmls/**/*.hbs',
+    htmlSrc: app + '/tpl/**/*.vm',
     imgSrc: app + '/images/**',
     cssSrc: tmp + '/styles/*.css',
     jsSrc: tmp + '/scripts/*.js',

@@ -4,6 +4,7 @@ var server = null,
     fs = require("fs"),
     multipart = require("connect-multiparty"),
     exphbs  = require("express-handlebars");
+var expVM = require("express-velocity");
 
 process.on("SIGTERM", function () {
   process.send({
@@ -20,9 +21,9 @@ function startServer(options, callback) {
   app.use(express.urlencoded());
   app.use(multipart());
   app.use(express.static(__dirname, "public"));
-  app.engine("hbs", exphbs({extname: ".hbs"}));
+  app.engine("vm", expVM({extname: ".vm"}));
   app.set("views", path.join(__dirname, "../../mocks/views"));
-  app.set("view engine", "hbs");
+  app.set("view engine", "vm");
   app.use(function (req, res, next) {
     var headers = {};
     if(req.method.toUpperCase() === "OPTIONS") {
