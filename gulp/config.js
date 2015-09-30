@@ -63,7 +63,6 @@ module.exports = {
     htmls: 'app/htmls/**',
     sprites: 'app/images/sprites/**',
     files: [
-      'app/htmls/**',
       '.tmp/**',
       'fixtures/**'
     ]
