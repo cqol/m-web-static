@@ -15,7 +15,7 @@ var config = require('../config').velocity;
 //};
 
 gulp.task('velocity', function() {
-	gulp.src('./app/tpl/*.vm')
+	gulp.src('./app/htmls/*.vm')
 		.pipe(vm(config))
 		.pipe(rename({extname:'.html'}))
 		.pipe(gulp.dest(config.htmlDir));

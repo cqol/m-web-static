@@ -14,9 +14,9 @@ module.exports = {
     fixtures: './fixtures'
   },
 	velocity: {
-		scr: app + '/tpl',
+		scr: app + '/htmls',
 		htmlDir: tmp + '/htmls',
-		root: './app/tpl',
+		root: './app/htmls',
 		encoding: 'utf-8',
 		//global macro defined file
 		macro: 'src/vm/tpl/global-macro/macro.vm',
@@ -60,6 +60,7 @@ module.exports = {
   watch: {
     styles: 'app/styles/**',
     images: 'app/images/**',
+    htmls: 'app/htmls/**',
     sprites: 'app/images/sprites/**',
     files: [
       'app/htmls/**',
@@ -69,7 +70,7 @@ module.exports = {
   },
   production: {
     cdn: 'http://img.hipac.cn/yt-mall',
-    htmlSrc: app + '/tpl/**/*.vm',
+    htmlSrc: app + '/htmls/**/*.vm',
     imgSrc: app + '/images/**',
     cssSrc: tmp + '/styles/*.css',
     jsSrc: tmp + '/scripts/*.js',

@@ -12,6 +12,7 @@ gulp.task('watch', ['watchify','connect'], function () {
 
   gulp.watch(config.styles, ['styles']);
   gulp.watch(config.images, ['images']);
+  gulp.watch(config.htmls, ['velocity']);
   gulp.watch(config.sprites, ['sprites']);
   // Watchify will watch and recompile our JS, so no need to gulp.watch it
 
