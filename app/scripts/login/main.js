@@ -1,10 +1,11 @@
 import $ from "jquery";
 import _ from "lodash";
 import Yt from "../shared/common";
+import testHbs from "./testHbs";
 //import dialog from "dialog";
+testHbs.init();
 
 console.log('render login');
-
 
 function enterKeyCheck(submitFun){
 	$(document).keydown(function(event){

@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html class="no-js">
-<head>
-  {{> metas}}
-  <title>{{title}}</title>
-  {{> styles}}
-  <link rel="stylesheet" href="/styles/error.css">
-  {{> flexible}}
-</head>
+    <head>
+        #parse('/shared/metas.vm')
+        <title>${title}</title>
+        #parse('/shared/styles.vm')
+        <link rel="stylesheet" href="/styles/error.css">
+        #parse('/shared/flexible.vm')
 
-<body>
-<div class="box">
-  <p>
-    {{info}}
-  </p>
-  <a href="{{url}}"><img src="/images/error/err.png"/></a>
-</div>
-</body>
+    </head>
+
+    <body>
+        <div class="box">
+            <p>
+                ${info}
+            </p>
+            <a href="${url}">
+                <img src="/images/error/err.png"/>
+            </a>
+        </div>
+    </body>
 </html>
