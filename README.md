@@ -10,9 +10,9 @@ https://babeljs.io/
 
 
 # node
-> 0.12
+*** > 0.12
 # npm 
-> 3.0
+*** > 3.0
 
 # debug 
 gulp serve
