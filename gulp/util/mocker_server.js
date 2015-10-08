@@ -20,7 +20,7 @@ function startServer(options, callback) {
   app.use(express.json());
   app.use(express.urlencoded());
   app.use(multipart());
-  app.use(express.static(__dirname, "public"));
+  app.use(express.static(__dirname, {'index': ['index.html', 'index.htm']}));
   app.engine("vm", expVM({extname: ".vm"}));
   app.set("views", path.join(__dirname, "../../mocks/views"));
   app.set("view engine", "vm");

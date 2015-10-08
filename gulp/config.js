@@ -14,7 +14,7 @@ module.exports = {
     fixtures: './fixtures'
   },
 	velocity: {
-		scr: app + '/htmls',
+		src: app + '/htmls',
 		htmlDir: tmp + '/htmls',
 		root: './app/htmls',
 		encoding: 'utf-8',
