@@ -24,6 +24,10 @@ module.exports = {
 		// test data root path
 		dataPath: './fixtures'
 	},
+	jshint: {
+		src: app + '/scripts/**/*.js',
+		jshintrc: '.jshintrc'
+	},
   styles: {
     src: app + '/styles/*.scss',
     watchSrc: app + '/styles/**',
