@@ -13,6 +13,16 @@
         <h1>${info}</h1>
 
         #parse('/shared/scripts.vm')
+        <ul>
+          #set($nums=[-2 .. 2])
+          #foreach($i in $nums)
+            $i
+          #end
+
+          #foreach( $elem in $allElems)
+            <li>$!elem.title</li>
+          #end
+        </ul>
         <script src="/scripts/home.js"></script>
     </body>
 </html>

@@ -2,5 +2,22 @@
 
   "title" : "海拍客首页",
   "name" : "cqol velocity test!!",
-  "info" : "海拍客首页!"
+  "info" : "海拍客首页!",
+  "allElems" : [
+    {
+      "title": "表单1"
+    },
+    {
+      "title": "表单2"
+    },
+    {
+      "title": "表单3"
+    },
+    {
+      "title": "表单4"
+    },
+    {
+      "title": "表单5"
+    }
+  ]
 }
