@@ -10,8 +10,6 @@ var vm = require("express-velocity");
 
 var velocity = require("velocity");
 
-var vm = require('../util/vm');
-
 gulp.task('connect', ['styles', 'images', 'fonts', 'velocity'], function () {
 
   app.use(livereload({port: 35729}))
