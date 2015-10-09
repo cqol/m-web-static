@@ -18,7 +18,8 @@
     "transform": [
       "babelify",
       "browserify-shim",
-      "hbsfy"
+      "hbsfy",
+      "dot-ify"
     ]
   },
   "browserify-shim": {
@@ -37,6 +38,8 @@
     "connect-livereload": "^0.5.3",
     "connect-multiparty": "^2.0.0",
     "del": "^2.0.2",
+    "dot": "^1.0.3",
+    "dot-ify": "^0.1.0",
     "express": "^3.4.3",
     "express-handlebars": "^2.0.1",
     "express-velocity": "^1.0.0",

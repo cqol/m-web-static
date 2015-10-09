@@ -53,7 +53,7 @@ module.exports = {
     // Support multiple glob pattern
     src: [app + '/scripts/*.js'],
     dest: tmp + '/scripts',
-    extensions: ['.hbs', '.jsx']
+    extensions: ['.hbs', '.jsx', '.dot']
   },
   sprites: {
     src: './app/images/sprites/',
