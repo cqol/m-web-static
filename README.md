@@ -7,8 +7,6 @@ Gulp + Browserify + Marionette + React
 https://babeljs.io/
 
 
-
-
 # node
 *** > 0.12
 # npm 
